@@ -13,8 +13,25 @@
     tools:showIn="@layout/activity_main">
 
     <TextView
+        android:id="@+id/myView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="#ff00ff"
+        android:textColor="#f00888"
         android:text="Fuck You !!!" />
+    <Button
+        android:id="@+id/addDataBt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/myView"
+        android:layout_marginTop="10dp"
+        android:text="addData"
+        android:onClick="addData"/>
+    <Button
+        android:id="@+id/clearDataBt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/addDataBt"
+        android:layout_alignTop="@+id/addDataBt"
+        android:text="clearData"
+        android:onClick="clearData"/>
 </RelativeLayout>
